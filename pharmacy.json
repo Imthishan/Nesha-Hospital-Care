@@ -1,0 +1,44 @@
+{
+    "medicines": {
+        "ANTIBIOTICS": [
+            { "name": "Amoxicillin", "price": 100, "image": "Images/Drugs/Amoxicilin.jpeg" },
+            { "name": "Ciprofloxacin", "price": 200, "image": "Images/Drugs/ciproflaxacin.jpeg" },
+            { "name": "Azithromycin", "price": 150, "image": "Images/Drugs/Azithromycin.jpeg" },
+            { "name": "Clindamycin", "price": 120, "image": "Images/Drugs/Clindamycin.jpeg" },
+            { "name": "Doxycycline", "price": 180, "image": "Images/Drugs/Doxycycline.jpeg" },
+            { "name": "Cephalexin", "price": 250, "image": "Images/Drugs/Cephalexin.jpeg" },
+            { "name": "Metronidazole", "price": 220, "image": "Images/Drugs/Metronidazole.jpeg" }
+        ],
+        "ANALGESICS": [
+            { "name": "Panadol 500mg", "price": 50, "image": "Images/Drugs/Panadol.jpeg" },
+            { "name": "Paracetamol 500mg", "price": 40, "image": "Images/Drugs/Paracetamol.jpeg" },
+            { "name": "Ibuprofen 200mg", "price": 70, "image": "Images/Drugs/Ibuprofen.jpeg" },
+            { "name": "Aspirin 100mg", "price": 60, "image": "Images/Drugs/Aspirin.jpeg" },
+            { "name": "Naproxen 250mg", "price": 80, "image": "Images/Drugs/Naproxen.jpeg" },
+            { "name": "Diclofenac 50mg", "price": 90, "image": "Images/Drugs/Diclofenac.jpeg" }
+        ],
+        "ANTIDEPRESSANTS": [
+            { "name": "Sertraline 50mg", "price": 300, "image": "Images/Drugs/Sertraline.jpeg" },
+            { "name": "Citalopram 20mg", "price": 250, "image": "Images/Drugs/Citalopram.jpeg" },
+            { "name": "Fluoxetine 20mg", "price": 220, "image": "Images/Drugs/Fluoxetine.jpeg" },
+            { "name": "Escitalopram 10mg", "price": 280, "image": "Images/Drugs/Escitalopram.jpeg" },
+            { "name": "Paroxetine 20mg", "price": 240, "image": "Images/Drugs/Paroxetine.jpeg" },
+            { "name": "Duloxetine 60mg", "price": 350, "image": "Images/Drugs/Duloxetine.jpeg" }
+        ],
+        "ANTIHISTAMINES": [
+            { "name": "Loratadine 10mg", "price": 60, "image": "Images/Drugs/Loratadine.jpeg" },
+            { "name": "Cetirizine 10mg", "price": 70, "image": "Images/Drugs/Cetirizine.jpeg" },
+            { "name": "Fexofenadine 120mg", "price": 80, "image": "Images/Drugs/Fexofenadine.jpeg" },
+            { "name": "Chlorpheniramine 4mg", "price": 50, "image": "Images/Drugs/Chlorpheniramine.jpeg" }
+        ],
+        "ANTIHYPERTENSIVES": [
+            { "name": "Amlodipine 5mg", "price": 120, "image": "Images/Drugs/Amlodipine.jpeg" },
+            { "name": "Losartan 50mg", "price": 100, "image": "Images/Drugs/Losartan.jpeg" },
+            { "name": "Lisinopril 10mg", "price": 130, "image": "Images/Drugs/Lisinopril.jpeg" },
+            { "name": "Ramipril 5mg", "price": 140, "image": "Images/Drugs/Ramipril.jpeg" },
+            { "name": "Captopril 25mg", "price": 110, "image": "Images/Drugs/Captopril.jpeg" },
+            { "name": "Enalapril 5mg", "price": 115, "image": "Images/Drugs/Enalapril.jpeg" },
+            { "name": "Telmisartan 40mg", "price": 150, "image": "Images/Drugs/Telmisartan.jpeg" }
+        ]
+    }
+}

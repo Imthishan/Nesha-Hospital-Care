@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation - Reserve</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon6/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon6/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon6/favicon-16x16.png">
+    <link rel="manifest" href="favicon6/site.webmanifest">
+    <link rel="stylesheet" href="Consultation.css">
+</head>
+<body>
+
+    <!-- Header section -->
+    <header>
+        <div class="logo">
+            <img src="Images/Nesha logo.jpeg" alt="Hospital Logo">
+        </div>
+
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Doctors.html">Doctors</a></li>
+                    <li><a href="Consultation.html">Consultation</a></li>
+                    <li><a href="pharmacy.html">Pharmacy</a></li>
+                    <li><a href="About us.html">About Us</a></li>
+                    
+        
+                </ul>
+                
+                <form action="#" method="get">
+                    <input type="text" name="query" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content - Consultation Form -->
+    <section class="consultation-container">
+        <h1>Consultation - Reserve</h1>
+        <form class="consultation-form">
+            <div class="form-group">
+                <label for="doctor"><i class="fas fa-user-md"></i> Enter the doctor</label>
+                <select id="doctor" name="doctor">
+                    <option value="" disabled selected>Choose a doctor</option>
+                    <option value="doctor1">Dr. Rajeenas</option>
+                    <option value="doctor2">Dr. Khaira</option>
+                    <option value="doctor3">Dr. Emily White</option>
+                    <option value="doctor4">Dr. Munawwer</option>
+                    <option value="doctor5">Dr. Sarah Green</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="branch"><i class="fas fa-hospital"></i> Hospital Branch</label>
+                <select id="branch" name="branch">
+                    <option value="" disabled selected>Select Branch</option>
+                    <option value="branch1">Colombo Main</option>
+                    <option value="branch2">Kandy</option>
+                    <option value="branch2">Colombo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date"><i class="fas fa-calendar-alt"></i> Date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <button type="submit">Reserve Consultation</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>Feel free to contact us</p>
+                <p>Phone: +94 76333 7929</p>
+                <p>Email: neshainfo@hospital.com</p>
+            </div>
+    
+            <div class="footer-right">
+                <p>Address: 123, Hospital Road, Colombo 07, Sri Lanka</p>
+                <p>Opening Hours: 24/7</p>
+            </div>
+    
+            <div class="footer-social">
+                <a href="#"><img src="Images/instagram icon.jpeg" alt="Instagram"></a>
+                <a href="#"><img src="Images/facebook icon.jpeg" alt="Facebook"></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 NESHA Healthcare. All rights reserved.</p>
+            <hr>
+        </div>
+    </footer>
+
+</body>
+</html>

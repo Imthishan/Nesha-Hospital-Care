@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon6/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon6/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon6/favicon-16x16.png">
+    <link rel="manifest" href="favicon6/site.webmanifest">
+    <link rel="stylesheet" href="patientform.css">
+</head>
+<body>
+
+    <!-- Header section -->
+    <header>
+        <div class="logo">
+            <img src="Images/Nesha logo.jpeg" alt="Hospital Logo">
+        </div>
+
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Doctors.html">Doctors</a></li>
+                    <li><a href="Consultation.html">Consultation</a></li>
+                    <li><a href="pharmacy.html">Pharmacy</a></li>
+                    <li><a href="About us.html">About Us</a></li>
+                    
+        
+                </ul>
+                
+                <form action="#" method="get">
+                    <input type="text" name="query" placeholder="Search...">
+                    <button type="submit">Search</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content - Patient Registration Form -->
+    <div class="container">
+        <h1>Patient Registration</h1>
+
+        <form action="submit_registration" method="post">
+            <!-- Personal Information Section -->
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter Your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+            </div>
+
+            <!-- Emergency Contact Section -->
+            <h2>Emergency Contact</h2>
+
+            <div class="form-group">
+                <label for="emergency-name">Emergency Contact Name:</label>
+                <input type="text" id="emergency-name" name="emergency_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="emergency-phone">Emergency Contact Phone:</label>
+                <input type="tel" id="emergency-phone" name="emergency_phone" pattern="[0-9]{10}" required>
+            </div>
+
+            <!-- Medical Information Section -->
+            <h2>Medical Information</h2>
+
+            <div class="form-group">
+                <label for="blood-group">Blood Group:</label>
+                <select id="blood-group" name="blood_group" required>
+                    <option value="" disabled selected>Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="allergies">Known Allergies:</label>
+                <textarea id="allergies" name="allergies" placeholder="List any allergies"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="existing-conditions">Existing Medical Conditions:</label>
+                <textarea id="existing-conditions" name="existing_conditions" placeholder="List any existing medical conditions"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>Feel free to contact us</p>
+                <p>Phone: +94 76333 7929</p>
+                <p>Email: neshainfo@hospital.com</p>
+            </div>
+    
+            <div class="footer-right">
+                <p>Address: 123, Hospital Road, Colombo 07, Sri Lanka</p>
+                <p>Opening Hours: 24/7</p>
+            </div>
+    
+            <div class="footer-social">
+                <a href="#"><img src="Images/instagram icon.jpeg" alt="Instagram"></a>
+                <a href="#"><img src="Images/facebook icon.jpeg" alt="Facebook"></a>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 NESHA Healthcare. All rights reserved.</p>
+            <hr>
+        </div>
+    </footer>
+
+</body>
+</html>

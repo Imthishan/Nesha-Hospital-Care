@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Directory</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon6/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon6/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon6/favicon-16x16.png">
+    <link rel="manifest" href="favicon6/site.webmanifest">
+    <link rel="stylesheet" href="paymentform.css">
+</head>
+<body>
+    <header>
+        <h1>Complete Your Payment</h1>
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="pharmacy.html">Go Back To Pharmacy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="payment-summary">
+        <h2>Order Summary</h2>
+        <div id="order-details">
+            <!-- Order details will be displayed here -->
+        </div>
+        <h3>Total: LKR <span id="total-amount-display">0</span></h3>
+    </section>
+    
+    <section id="payment-methods">
+        <h2>Enter Payment Details</h2>
+        <form id="final-payment-form">
+            <label>
+                Name:
+                <input type="text" id="user-name" placeholder="Your Name" required>
+            </label>
+            <label>
+                Address:
+                <textarea id="user-address" placeholder="Delivery Address" required></textarea>
+            </label>
+            <label>
+                Card Number:
+                <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" required pattern="\d{16}">
+            </label>
+            <label>
+                Expiry Date:
+                <input type="text" id="expiry-date" placeholder="MM/YY" required pattern="(0[1-9]|1[0-2])\/\d{2}">
+            </label>
+            <label>
+                CVV:
+                <input type="password" id="cvv" placeholder="XXX" required pattern="\d{3}">
+            </label>
+            <button type="submit">Pay Now</button>
+        </form>
+        <div id="success-message" style="display: none;">
+            <h2>Thank You for Your Purchase!</h2>
+            <p>Your order has been placed successfully.</p>
+            <p>Estimated Delivery Date: <span id="delivery-date"></span></p>
+        </div>
+    </section>
+
+    <script src="payment-directory.js"></script>
+</body>
+</html>

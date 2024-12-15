@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon6/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon6/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon6/favicon-16x16.png">
+    <link rel="manifest" href="favicon6/site.webmanifest">
+    <link rel="stylesheet" href="Pharmacy.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Images/Nesha logo.jpeg" alt="Hospital Logo">
+        </div>
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Doctors.html">Doctors</a></li>
+                    <li><a href="Consultation.html">Consultation</a></li>
+                    <li><a href="Pharmacy.html">Pharmacy</a></li>
+                    <li><a href="About us.html">About Us</a></li>
+                </ul>
+                <form action="#" method="get" aria-label="Search Form">
+                    <input type="text" name="query" placeholder="Search..." aria-label="Search Query">
+                    <button type="submit" aria-label="Search Button">Search</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="order-section">
+        <h2>Order Medicines</h2>
+        <div id="categories"></div>
+        <h3>Your Cart</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="order-table"></tbody>
+        </table>
+        <h3>Total Price: LKR <span id="total-price">0</span></h3>
+    </section>
+
+    <section id="favourites-section">
+        <h2>Favourites</h2>
+        <button id="save-favourites" aria-label="Save to Favourites">Add to Favourites</button>
+        <button id="apply-favourites" aria-label="Apply Favourites">Apply Favourites</button>
+    </section>
+    
+    <form id="payment-form" action="payment-directory.html" method="GET" aria-label="Payment Form">
+        <input type="hidden" id="cart-data" name="cart-data">
+        <input type="hidden" id="total-amount" name="total-amount">
+        <button type="submit" id="pay-button">Buy Now</button>
+    </form>
+
+    <script src="pharmacy.js"></script>
+</body>
+</html>
